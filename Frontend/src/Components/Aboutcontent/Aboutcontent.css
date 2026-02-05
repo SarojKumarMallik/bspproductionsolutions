@@ -42,14 +42,14 @@
 /* MIDDLE IMAGE */
 .Aboutcontent_image.middle {
   z-index: 2;
-  transform: translate(-35px, -25px) scale(0.96);
+  transform: translate(-35px, -25px) scale(1);
   opacity: 0.9;
 }
 
 /* BACK IMAGE */
 .Aboutcontent_image.back {
   z-index: 1;
-  transform: translate(-70px, -50px) scale(0.92);
+  transform: translate(-70px, -50px) scale(0.98);
   opacity: 0.8;
 }
 
