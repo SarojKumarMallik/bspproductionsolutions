@@ -61,7 +61,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  /* margin-bottom: 80px; */
+  margin-bottom: 30px;
 }
 
 .energy_step.left {
@@ -146,6 +146,9 @@
 
 /* ================= MOBILE ================= */
 @media (max-width: 900px) {
+  .renergy{
+    padding-bottom: 60px;
+  }
   .energy_line {
     left: 24px;
   }
@@ -166,6 +169,9 @@
 }
 
 @media (max-width: 600px) {
+  .renergy{
+    padding-bottom: 60px;
+  }
   .renergy_header {
     margin-bottom: 70px;
   }
