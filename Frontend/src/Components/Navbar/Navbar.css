@@ -1,0 +1,207 @@
+/* ================= RESET ================= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+/* Remove underline globally */
+a {
+  text-decoration: none;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: transparent;
+  transition: background 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* On scroll */
+.navbar.scrolled {
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* ================= CONTAINER ================= */
+.navbar-container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ================= LOGO ================= */
+.navbar-logo {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+/* Logo color on scroll */
+.navbar.scrolled .navbar-logo {
+  color: #0a3557;
+}
+
+/* ================= DESKTOP MENU ================= */
+.navbar-menu {
+  display: flex;
+  gap: 36px;
+}
+
+.nav-item {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Menu color on scroll */
+.navbar.scrolled .nav-item {
+  color: #0a3557;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #00e5ff, #6a5cff);
+  transition: width 0.3s;
+}
+
+.nav-item.active::after,
+.nav-item:hover::after {
+  width: 100%;
+}
+
+/* ================= HAMBURGER ================= */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 24px;
+  height: 2px;
+  background: #ffffff;
+  transition: 0.3s;
+}
+
+/* Hamburger color on scroll */
+.navbar.scrolled .hamburger span {
+  background: #0a3557;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ================= MOBILE SIDEBAR ================= */
+.mobile-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  z-index: 998;
+}
+
+.mobile-overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  right: -280px;
+  width: 280px;
+  height: 100vh;
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(14px);
+  padding: 90px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: right 0.35s ease;
+  z-index: 999;
+}
+
+.mobile-sidebar.open {
+  right: 0;
+}
+
+/* Menu */
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.mobile-item {
+  font-size: 14px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.mobile-item.active {
+  color: #00e5ff;
+}
+
+/* Social */
+.mobile-social {
+  display: flex;
+  gap: 18px;
+}
+
+.mobile-social a {
+  color: #ffffff;
+  font-size: 16px;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.mobile-social a:hover {
+  opacity: 1;
+  color: #00e5ff;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
