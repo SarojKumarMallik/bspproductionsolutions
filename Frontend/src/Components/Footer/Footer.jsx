@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import {
   FaFacebookF,
   FaTwitter,
@@ -25,9 +27,12 @@ const Footer = () => {
         </div>
 
         <div className="Footer-hero-cta-actions">
-          <button className="Footer-hero-cta-btn">
-            Contact BSP Project Solutions
-          </button>
+          <Link to="/contact">
+  <button className="Footer-hero-cta-btn">
+    Contact BSP Project Solutions
+  </button>
+</Link>
+
           <button className="Footer-hero-cta-call">
             <FaPhoneAlt /> &nbsp;Call: 8018970154
           </button>
@@ -100,16 +105,24 @@ const Footer = () => {
         {/* BOTTOM */}
         <div className="Footer-hero-bottom">
           <p>
-            © Copyrights are Reserved by YourCompany.com |
-            Developed by{" "}
-            <a
-              href="https://www.creovatetechnologies.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Creovate Technologies
-            </a>
-          </p>
+  © Copyrights are Reserved by{" "}
+  <a
+    href="https://www.bspprojectsolutions.co.in/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    bspprojectsolutions
+  </a>{" "}
+  | Developed by{" "}
+  <a
+    href="https://www.instagram.com/creovatetechnologies/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Creovate Technologies
+  </a>
+</p>
+
         </div>
       </div>
 
