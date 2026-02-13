@@ -45,7 +45,7 @@ const Footer = () => {
           {/* BRAND */}
           <div className="Footer-hero-col Footer-hero-brand">
             <div className="Footer-hero-logo">
-              <span className="Footer-hero-sun">☀</span> Solam
+              <span className="Footer-hero-sun">☀</span> BSPPROJECTSOLUTIONS
             </div>
 
             <p className="Footer-hero-desc">
