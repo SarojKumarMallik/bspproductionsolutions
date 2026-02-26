@@ -1,0 +1,132 @@
+/* ================= HERO SECTION ================= */
+.ongrid-hero {
+  padding: 40px 20px;
+  background: linear-gradient(180deg, #f9fafb 0%, #ffffff 100%);
+}
+
+.ongrid-container {
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* ================= LEFT CONTENT ================= */
+.ongrid-content h1 {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+.ongrid-content h1 span {
+  color: #2e7d32;
+}
+
+.ongrid-description {
+  font-size: 16px;
+  color: #64748b;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* ================= BENEFITS ================= */
+.ongrid-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 35px;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.benefit-icon {
+  color: #2e7d32;
+  font-size: 18px;
+}
+
+/* ================= BUTTONS ================= */
+.ongrid-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.primary-btn {
+  background: #2e7d32;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 40px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.primary-btn:hover {
+  background: #1b5e20;
+  transform: translateY(-3px);
+}
+
+.secondary-btn {
+  border: 2px solid #2e7d32;
+  color: #2e7d32;
+  padding: 12px 28px;
+  border-radius: 40px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.secondary-btn:hover {
+  background: #2e7d32;
+  color: #fff;
+}
+
+/* ================= IMAGE ================= */
+.ongrid-image img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  transition: 0.3s ease;
+}
+
+.ongrid-image img:hover {
+  transform: scale(1.03);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+  .ongrid-container {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .ongrid-benefits {
+    align-items: left;
+  }
+
+  .benefit-item {
+    justify-content: left;
+  }
+
+  .ongrid-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .ongrid-content h1 {
+    font-size: 28px;
+  }
+
+  .ongrid-description {
+    font-size: 14px;
+  }
+}

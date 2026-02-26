@@ -1,0 +1,299 @@
+/* ===== Premium On-Grid Section - Top to Bottom Layout ===== */
+
+.Ongridwhyongridsolarsystem-section {
+  padding: 20px 20px;
+  background: linear-gradient(180deg, #ffffff 0%, #f5faf5 100%);
+  font-family: "Inter", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.Ongridwhyongridsolarsystem-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.Ongridwhyongridsolarsystem-header {
+  text-align: center;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.Ongridwhyongridsolarsystem-header-top {
+  margin-bottom: 10px;
+}
+
+.Ongridwhyongridsolarsystem-section-badge {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #2E7D32;
+  padding: 8px 20px;
+  background: linear-gradient(180deg, rgba(46, 125, 50, 0.08), rgba(76, 175, 80, 0.08));
+  border-radius: 40px;
+  border: 1px solid rgba(46, 125, 50, 0.2);
+}
+
+.Ongridwhyongridsolarsystem-title {
+  font-size: 48px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.Ongridwhyongridsolarsystem-title-gradient {
+  background: linear-gradient(180deg, #2E7D32, #4CAF50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.Ongridwhyongridsolarsystem-subtitle {
+  font-size: 18px;
+  color: #475569;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.Ongridwhyongridsolarsystem-header-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  
+  width: 100%;
+}
+
+.Ongridwhyongridsolarsystem-divider-line {
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #2E7D32, #4CAF50, #2E7D32, transparent);
+}
+
+.Ongridwhyongridsolarsystem-divider-icon {
+  font-size: 24px;
+  color: #2E7D32;
+  animation: Ongridwhyongridsolarsystem-bounce 2s infinite;
+}
+
+@keyframes Ongridwhyongridsolarsystem-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.Ongridwhyongridsolarsystem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 35px;
+  margin-bottom: 80px;
+}
+
+.Ongridwhyongridsolarsystem-card {
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 35px;
+  transition: all 0.4s ease;
+  border: 1px solid #e8f0e8;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  animation: Ongridwhyongridsolarsystem-fadeInUp 0.6s ease backwards;
+}
+
+.Ongridwhyongridsolarsystem-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(180deg, #2E7D32, #4CAF50);
+}
+
+.Ongridwhyongridsolarsystem-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.Ongridwhyongridsolarsystem-card-icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #2E7D32, #4CAF50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: #fff;
+}
+
+.Ongridwhyongridsolarsystem-card-number {
+  font-size: 42px;
+  font-weight: 800;
+  color: rgba(46, 125, 50, 0.1);
+}
+
+.Ongridwhyongridsolarsystem-card-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 15px 0;
+}
+
+.Ongridwhyongridsolarsystem-card-description {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #475569;
+  margin: 0 0 25px 0;
+  flex-grow: 1;
+}
+
+.Ongridwhyongridsolarsystem-card-bottom {
+  display: flex;
+  gap: 8px;
+}
+
+.Ongridwhyongridsolarsystem-card-dot {
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(180deg, #2E7D32, #4CAF50);
+  border-radius: 50%;
+}
+
+.Ongridwhyongridsolarsystem-cta-wrapper {
+  text-align: center;
+}
+
+.Ongridwhyongridsolarsystem-connect-btn {
+  background: linear-gradient(180deg, #2E7D32, #1B5E20);
+  color: white;
+  padding: 18px 50px;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.Ongridwhyongridsolarsystem-btn-arrow {
+  margin-left: 10px;
+}
+
+@keyframes Ongridwhyongridsolarsystem-fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Large Laptop */
+@media (max-width: 1200px) {
+  .Ongridwhyongridsolarsystem-title {
+    font-size: 40px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .Ongridwhyongridsolarsystem-section {
+    padding: 80px 20px;
+  }
+
+  .Ongridwhyongridsolarsystem-title {
+    font-size: 34px;
+  }
+
+  .Ongridwhyongridsolarsystem-subtitle {
+    font-size: 16px;
+  }
+
+  .Ongridwhyongridsolarsystem-grid {
+    gap: 25px;
+  }
+
+  .Ongridwhyongridsolarsystem-card {
+    padding: 28px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .Ongridwhyongridsolarsystem-section {
+    padding: 70px 15px;
+  }
+
+  .Ongridwhyongridsolarsystem-title {
+    font-size: 28px;
+  }
+
+  .Ongridwhyongridsolarsystem-section-badge {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+
+  .Ongridwhyongridsolarsystem-subtitle {
+    font-size: 15px;
+  }
+
+  .Ongridwhyongridsolarsystem-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .Ongridwhyongridsolarsystem-card-title {
+    font-size: 20px;
+  }
+
+  .Ongridwhyongridsolarsystem-card-description {
+    font-size: 14px;
+  }
+
+  .Ongridwhyongridsolarsystem-connect-btn {
+    padding: 15px 35px;
+    font-size: 16px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+  .Ongridwhyongridsolarsystem-title {
+    font-size: 24px;
+  }
+
+  .Ongridwhyongridsolarsystem-card {
+    padding: 22px;
+  }
+
+  .Ongridwhyongridsolarsystem-card-icon {
+    width: 55px;
+    height: 55px;
+    font-size: 22px;
+  }
+
+  .Ongridwhyongridsolarsystem-card-title {
+    font-size: 18px;
+  }
+
+  .Ongridwhyongridsolarsystem-card-description {
+    font-size: 13px;
+  }
+
+  .Ongridwhyongridsolarsystem-connect-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 15px;
+  }
+}

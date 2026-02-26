@@ -1,0 +1,139 @@
+/* ================= SECTION ================= */
+.Howtoinstall-section {
+  padding: 20px 20px;
+  background: linear-gradient(to bottom, #f8fafc, #ffffff);
+  font-family: "Inter", sans-serif;
+}
+
+.Howtoinstall-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ================= HEADER ================= */
+.Howtoinstall-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.Howtoinstall-badge {
+  background: #e8f5e9;
+  color: #2e7d32;
+  padding: 6px 18px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.Howtoinstall-heading {
+  font-size: 36px;
+  margin: 20px 0;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.Howtoinstall-heading span {
+  background: linear-gradient(90deg, #2e7d32, #66bb6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Howtoinstall-subtext {
+  color: #64748b;
+  font-size: 16px;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* ================= TIMELINE ================= */
+.Howtoinstall-timeline {
+  position: relative;
+  margin-left: 20px;
+  border-left: 3px solid #2e7d32;
+}
+
+.Howtoinstall-step {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.Howtoinstall-icon {
+  position: absolute;
+  left: -25px;
+  background: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  border: 3px solid #2e7d32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2e7d32;
+  font-size: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.Howtoinstall-step-number {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #ffc107;
+  color: #000;
+  width: 22px;
+  height: 22px;
+  font-size: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.Howtoinstall-content {
+  margin-left: 60px;
+  padding-left: 30px;
+}
+
+.Howtoinstall-content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #1e293b;
+}
+
+.Howtoinstall-content p {
+  color: #64748b;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .Howtoinstall-heading {
+    font-size: 26px;
+  }
+
+  .Howtoinstall-timeline {
+    margin-left: 10px;
+  }
+
+  .Howtoinstall-icon {
+    width: 50px;
+    height: 50px;
+    left: -22px;
+  }
+
+  .Howtoinstall-content {
+    margin-left: 50px;
+    padding-left: 20px;
+  }
+}
+
+/* ================= MOBILE TEXT ALIGN FIX ================= */
+@media (max-width: 768px) {
+  .Howtoinstall-header {
+    text-align: left;
+  }
+}
