@@ -1,14 +1,12 @@
 import React from "react";
 import "./Contactbreadcrum.css";
-import about from "../../assets/img/about.webp";import { Link } from "react-router-dom";
-
-
+import about from "../../assets/img/about.webp";
+import { Link } from "react-router-dom";
 
 const Contactbreadcrum = () => {
   return (
     <section className="Contactbreadcrum">
-
-      {/* Background Image */}
+    
       <img
         src={about}
         alt="Contact Background"
@@ -25,14 +23,14 @@ const Contactbreadcrum = () => {
       <div className="Contactbreadcrum-content">
         <h1>Contact Us</h1>
 
-       <div className="Contactbreadcrum-breadcrumb">
-  <Link to="/" className="home">Home</Link>
-  <span className="separator"> / </span>
-  <span className="active">Contact Us</span>
-</div>
-
+        <div className="Contactbreadcrum-breadcrumb">
+          <Link to="/" className="home">
+            Home
+          </Link>
+          <span className="separator"> / </span>
+          <span className="active">Contact Us</span>
+        </div>
       </div>
-
     </section>
   );
 };
