@@ -17,9 +17,10 @@ const Pagenotfound = () => {
 
     const drawBall = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
+
       ctx.beginPath();
       ctx.arc(x, y, radius, 0, Math.PI * 2);
-      ctx.fillStyle = "#2e7d32";
+      ctx.fillStyle = "#0f3d5e";
       ctx.fill();
       ctx.closePath();
 
@@ -35,29 +36,33 @@ const Pagenotfound = () => {
     };
 
     const interval = setInterval(drawBall, 10);
-
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="pagenotfound-wrapper">
       <div className="pagenotfound-container">
-        <h1 className="error-code">404</h1>
 
-        <h2 className="error-title">Page Not Found</h2>
+        <h1 className="error-code">🚧</h1>
+
+        <h2 className="error-title">
+          We’re Working On This Page
+        </h2>
 
         <p className="error-text">
-          Sorry, the page you’re looking for doesn’t exist or is under development.
+          This section is currently under development.  
+          Our team is building something amazing for you.
         </p>
 
         <div className="mini-game">
-          
+          <p className="game-text">While you wait, enjoy this mini animation 😊</p>
           <canvas ref={canvasRef} width="300" height="120"></canvas>
         </div>
 
         <Link to="/" className="home-btn">
-          Go Back Home
+          Back to Home →
         </Link>
+
       </div>
     </div>
   );

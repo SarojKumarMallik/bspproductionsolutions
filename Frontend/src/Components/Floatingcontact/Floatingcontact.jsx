@@ -6,40 +6,49 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 const Floatingcontact = () => {
   const [open, setOpen] = useState(true);
 
-  const whatsappNumber = "919775353642"; // Replace with your WhatsApp number
-  const callNumber = "9775353642"; // Replace with your call number
+  const whatsappNumber = "919775353642";
+  const callNumber = "9775353642";
 
   const message =
     "Hello! I am interested in installing a solar system. Please guide me.";
 
   return (
-    <div className={`floating-contact-wrapper ${open ? "open" : "closed"}`}>
-      
-      {/* Arrow Toggle */}
-      <div
-        className="floating-toggle-btn"
-        onClick={() => setOpen(!open)}
-      >
-        {open ? <IoIosArrowForward /> : <IoIosArrowBack />}
+    <div className="floating-container">
+
+      <div className="floating-stack">
+        
+        {/* Arrow Toggle - TOP */}
+        <div
+          className="floating-toggle-btn"
+          onClick={() => setOpen(!open)}
+        >
+          {open ? <IoIosArrowForward /> : <IoIosArrowBack />}
+        </div>
+
+        {/* Contact Buttons */}
+        <div className={`floating-contact-wrapper ${open ? "open" : "closed"}`}>
+
+          {/* WhatsApp */}
+          <a
+            href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="floating-btn whatsapp"
+          >
+            <FaWhatsapp />
+          </a>
+
+          {/* Call */}
+          <a
+            href={`tel:${callNumber}`}
+            className="floating-btn call"
+          >
+            <FaPhoneAlt />
+          </a>
+
+        </div>
+
       </div>
-
-      {/* WhatsApp Button */}
-      <a
-        href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="floating-btn whatsapp"
-      >
-        <FaWhatsapp />
-      </a>
-
-      {/* Call Button */}
-      <a
-        href={`tel:${callNumber}`}
-        className="floating-btn call"
-      >
-        <FaPhoneAlt />
-      </a>
 
     </div>
   );

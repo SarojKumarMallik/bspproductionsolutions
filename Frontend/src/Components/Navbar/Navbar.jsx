@@ -141,7 +141,7 @@ const Navbar = () => {
                   </div>
                 </NavLink>
 
-                <NavLink to="/hybrid">
+                <NavLink to="/services/hybrid-solar-system">
                   <FaSolarPanel className="dropdown-icon" />
                   <div className="dropdown-text">
                     <span className="dropdown-title">Hybrid Solar System</span>
@@ -149,7 +149,7 @@ const Navbar = () => {
                   </div>
                 </NavLink>
 
-                <NavLink to="/off-grid">
+                <NavLink to="/services/off-grid-solar-system">
                   <FaBatteryFull className="dropdown-icon" />
                   <div className="dropdown-text">
                     <span className="dropdown-title">Off Grid Solar</span>
@@ -203,6 +203,9 @@ const Navbar = () => {
             <NavLink to="/blog" className={({isActive}) => `nav-item ${isActive ? "active" : ""}`}>
               Blog
             </NavLink>
+          <NavLink to="/career" className={({isActive}) => `nav-item ${isActive ? "active" : ""}`}>
+  Career
+</NavLink>
 
             <NavLink to="/contact" className={({isActive}) => `nav-item ${isActive ? "active" : ""}`}>
               Contact Us
@@ -260,7 +263,7 @@ const Navbar = () => {
             {mobileServicesOpen && (
               <div className="mobile-dropdown-menu">
                 <NavLink to="/services/on-grid-solar-system" onClick={closeMobileMenu}>On Grid Solar</NavLink>
-                <NavLink to="/hybrid" onClick={closeMobileMenu}>Hybrid Solar</NavLink>
+                <NavLink to="/services/hybrid-solar-system" onClick={closeMobileMenu}>Hybrid Solar</NavLink>
                 <NavLink to="/off-grid" onClick={closeMobileMenu}>Off Grid Solar</NavLink>
                 <NavLink to="/solar-amc" onClick={closeMobileMenu}>Solar AMC</NavLink>
               </div>
@@ -287,6 +290,9 @@ const Navbar = () => {
 
           <NavLink to="/blog" className="mobile-nav-item" onClick={closeMobileMenu}>
             <FaNewspaper /> Blog
+          </NavLink>
+          <NavLink to="/career" className="mobile-nav-item" onClick={closeMobileMenu}>
+            <FaNewspaper /> Career
           </NavLink>
 
           <NavLink to="/contact" className="mobile-nav-item" onClick={closeMobileMenu}>

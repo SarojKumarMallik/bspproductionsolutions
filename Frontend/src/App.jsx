@@ -12,6 +12,9 @@ import Ongridsolarsystem from "./Pages/Ongridsolarsystem/Ongridsolarsystem";
 import Pagenotfound from "./Components/Pagenotfound/Pagenotfound";
 import logo from "./assets/img/logo.png";
 import Floatingcontact from "./Components/Floatingcontact/Floatingcontact";
+import Hybridsolarsystem from "./Pages/Hybridsolarsystem/Hybridsolarsystem";
+import Offgridsolarsystem from "./Pages/Offgridsolarsystem/Offgridsolarsystem";
+import Career from "./Pages/Career/Career";
 
 function App() {
   const location = useLocation(); // 👈 detect route change
@@ -60,7 +63,16 @@ function App() {
           path="/services/on-grid-solar-system"
           element={<Ongridsolarsystem />}
         />
+        <Route
+          path="/services/hybrid-solar-system"
+          element={<Hybridsolarsystem />}
+        />
+        <Route
+          path="/services/off-grid-solar-system"
+          element={<Offgridsolarsystem />}
+        />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/career" element={<Career />} />
         <Route path="*" element={<Pagenotfound />} />
       </Routes>
 
