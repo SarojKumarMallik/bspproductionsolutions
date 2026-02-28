@@ -76,50 +76,82 @@ const Pmsuryaghar = () => {
           </div>
 
           {/* Benefits Section */}
-          <div className="pmsuryaghar-benefits">
-            <div className="benefits-header">
-              <div className="benefits-icon">🌞</div>
-              <div>
-                <h3>Subsidy Support</h3>
-                <p>Government-supported rooftop solar scheme</p>
-              </div>
-            </div>
+<div className="pmsuryaghar-benefits">
+  <div className="benefits-header">
+    <div className="benefits-icon">🌞</div>
+    <div>
+      <h3>PM Surya Ghar Subsidy Support</h3>
+      <p>Government-supported rooftop solar scheme in Odisha</p>
+    </div>
+  </div>
 
-            <div className="benefits-list">
-              <div className="benefit">
-                <div className="benefit-check">✓</div>
-                <div className="benefit-text">
-                  <h4>We handle the paperwork for you</h4>
-                  <p>Complete documentation support</p>
-                </div>
-              </div>
+  <div className="benefits-list">
 
-              <div className="benefit">
-                <div className="benefit-check">✓</div>
-                <div className="benefit-text">
-                  <h4>Transparent subsidy processing</h4>
-                  <p>Clear communication & tracking</p>
-                </div>
-              </div>
+    <div className="benefit">
+      <div className="benefit-check">✓</div>
+      <div className="benefit-text">
+        <h4>We Handle Complete Documentation</h4>
+        <p>End-to-end paperwork & DISCOM approval support</p>
+      </div>
+    </div>
 
-              <div className="benefit">
-                <div className="benefit-check">✓</div>
-                <div className="benefit-text">
-                  <h4>Quick & easy application</h4>
-                  <p>End-to-end assistance</p>
-                </div>
-              </div>
-              <div className="benefit">
-                <div className="benefit-check">✓</div>
-                <div className="benefit-text">
-                  <h4>Quick & easy application</h4>
-                  <p>End-to-end assistance</p>
-                </div>
-              </div>
-            </div>
+    <div className="benefit">
+      <div className="benefit-check">✓</div>
+      <div className="benefit-text">
+        <h4>Transparent Subsidy Processing</h4>
+        <p>Clear tracking & regular updates on your application</p>
+      </div>
+    </div>
 
-            
-          </div>
+    <div className="benefit">
+      <div className="benefit-check">✓</div>
+      <div className="benefit-text">
+        <h4>Fast Net Metering Approval</h4>
+        <p>Quick coordination with local electricity department</p>
+      </div>
+    </div>
+
+    <div className="benefit">
+      <div className="benefit-check">✓</div>
+      <div className="benefit-text">
+        <h4>Maximum Government Subsidy Assistance</h4>
+        <p>Get eligible rooftop solar subsidy under PM Surya Ghar Yojana</p>
+      </div>
+    </div>
+
+    <div className="benefit">
+      <div className="benefit-check">✓</div>
+      <div className="benefit-text">
+        <h4>Free Site Inspection & System Design</h4>
+        <p>Customized solar capacity planning for your home</p>
+      </div>
+    </div>
+
+    <div className="benefit">
+      <div className="benefit-check">✓</div>
+      <div className="benefit-text">
+        <h4>Hassle-Free Installation Process</h4>
+        <p>Certified engineers ensure safe & compliant installation</p>
+      </div>
+    </div>
+
+    <div className="benefit">
+      <div className="benefit-check">✓</div>
+      <div className="benefit-text">
+        <h4>Long-Term Warranty & Maintenance</h4>
+        <p>Performance guarantee with after-installation support</p>
+      </div>
+    </div>
+    <div className="benefit">
+  <div className="benefit-check">✓</div>
+  <div className="benefit-text">
+    <h4>Significant Reduction in Electricity Bills</h4>
+    <p>Save up to 80% on monthly power costs with rooftop solar installation</p>
+  </div>
+</div>
+
+  </div>
+</div>
         </div>
       </div>
     </section>

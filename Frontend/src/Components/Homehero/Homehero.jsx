@@ -5,24 +5,20 @@ import "./Homehero.css";
 const slides = [
   {
     image: "https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=2070&q=80",
-    title: "Empower Tomorrow\nwith Solar Today",
-    desc: "Delivering end-to-end solar energy solutions including rooftop solar installation, solar power systems, energy storage, smart inverters, maintenance services, project consulting, and flexible financing options to help homes and businesses reduce electricity costs and embrace a sustainable future.",
-    
+    title: "Leading Solar Company in Odisha",
+    desc: "BSP Project Solutions provides professional rooftop solar installation, on-grid solar systems, and commercial solar solutions across Odisha. Reduce electricity bills with government subsidy support.",
   },
   {
     image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=2072&q=80",
-    title: "Clean Energy\nfor a Brighter Future",
-    desc: "Specializing in renewable energy solutions for residential, commercial, and industrial projects. Our expertise covers grid-connected solar systems, off-grid solutions, hybrid solar power plants, battery backup systems, and long-term performance optimization.",
-    
+    title: "On-Grid, Off-Grid & Hybrid Solar Systems",
+    desc: "Expert installation of grid-connected, off-grid, and hybrid solar power systems for homes, businesses, and industries. Reliable solar energy solutions designed for long-term savings.",
   },
   {
     image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=2070&q=80",
-    title: "Powering Progress\nSustainably",
-    desc: "Driving innovation through high-efficiency solar panels, intelligent energy management, and eco-friendly power generation. Our mission is to deliver cost-effective clean energy solutions that support sustainability, reduce carbon footprint, and power long-term growth.",
-    
+    title: "Save More with Smart Solar Energy",
+    desc: "High-efficiency solar panels, advanced inverters, battery backup systems, and complete maintenance services to power your home or commercial property sustainably.",
   },
 ];
-
 const Homehero = () => {
   const [current, setCurrent] = useState(0);
   const [enableTransition, setEnableTransition] = useState(true);
