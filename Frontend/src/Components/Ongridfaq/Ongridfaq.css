@@ -1,7 +1,14 @@
+:root {
+  --bsp-primary: #0b2e46;
+  --bsp-accent: #2E7FBF;
+  --white: #ffffff;
+  --light-white: #e2e8f0;
+}
+
 /* ================= SECTION ================= */
 .Ongridfaq-section {
-  padding: 20px 20px;
-  background: linear-gradient(to bottom, #f8fafc, #ffffff);
+  padding: 80px 20px;
+  background: var(--bsp-primary); /* THEME BACKGROUND */
   font-family: "Inter", sans-serif;
 }
 
@@ -17,9 +24,9 @@
 }
 
 .Ongridfaq-badge {
-  background: #e8f5e9;
-  color: #2e7d32;
-  padding: 6px 18px;
+  background: rgba(255,255,255,0.1);
+  color: var(--white);
+  padding: 8px 20px;
   border-radius: 50px;
   font-size: 13px;
   font-weight: 600;
@@ -29,12 +36,12 @@
 .Ongridfaq-heading {
   font-size: 36px;
   margin-top: 15px;
-  font-weight: 700;
-  color: #1e293b;
+  font-weight: 800;
+  color: var(--white);
 }
 
 .Ongridfaq-heading span {
-  background: linear-gradient(90deg, #2e7d32, #66bb6a);
+  background: linear-gradient(90deg, #ffffff, var(--bsp-accent));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -43,40 +50,41 @@
 .Ongridfaq-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 18px;
 }
 
 .Ongridfaq-item {
-  background: #ffffff;
-  border-radius: 12px;
-  border: 1px solid #e5e7eb;
+  background: rgba(255,255,255,0.05);
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.15);
   overflow: hidden;
   transition: all 0.3s ease;
 }
 
 .Ongridfaq-item.active {
-  border-color: #2e7d32;
-  box-shadow: 0 10px 25px rgba(46, 125, 50, 0.1);
+  border-color: var(--bsp-accent);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
+/* ================= QUESTION ================= */
 .Ongridfaq-question {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 22px;
+  padding: 20px 24px;
   cursor: pointer;
 }
 
 .Ongridfaq-question h3 {
   font-size: 16px;
   font-weight: 600;
-  color: #1e293b;
+  color: var(--white);
   margin: 0;
   flex: 1;
 }
 
 .Ongridfaq-icon {
-  color: #2e7d32;
+  color: var(--white);
   font-size: 14px;
   margin-left: 15px;
   transition: transform 0.3s ease;
@@ -87,24 +95,25 @@
   max-height: 0;
   overflow: hidden;
   transition: all 0.4s ease;
-  padding: 0 22px;
+  padding: 0 24px;
 }
 
 .Ongridfaq-item.active .Ongridfaq-answer {
-  max-height: 200px;
-  padding: 0 22px 20px 22px;
+  max-height: 250px;
+  padding: 0 24px 22px 24px;
 }
 
 .Ongridfaq-answer p {
   font-size: 15px;
-  color: #64748b;
+  color: var(--light-white);
   line-height: 1.6;
   margin: 0;
 }
 
 /* ================= HOVER ================= */
 .Ongridfaq-item:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  border-color: var(--bsp-accent);
 }
 
 /* ================= RESPONSIVE ================= */

@@ -10,38 +10,37 @@ import "./Howtoinstall.css";
 
 const Howtoinstall = () => {
   const steps = [
-    {
-      icon: <FaFileInvoice />,
-      title: "Submit Request For Solar System Quotation",
-      description:
-        "Click on the “Get Quote” and request solar quotations by filling up the quotation form. Enter your name, phone number, electricity consumption details, etc., and submit the form."
-    },
-    {
-      icon: <FaUserTie />,
-      title: "Discuss With Our Energy Advisor",
-      description:
-        "Our energy advisor will contact you during working hours and you can discuss/ask questions about any of your doubts related to on-grid solar installation. In the call, you can raise a site visit request."
-    },
-    {
-      icon: <FaMapMarkedAlt />,
-      title: "Site Visit & Final Quotation",
-      description:
-        "After the site visit, our installation partner will provide you with a final quotation along with a plan/3D design."
-    },
-    {
-      icon: <FaSolarPanel />,
-      title: "Solar System Installation",
-      description:
-        "Once you confirm the order, we notify our solar installation partner. Your on-grid solar system will be installed as soon as possible."
-    },
-    {
-      icon: <FaPlug />,
-      title: "Final Checks and Grid Connection",
-      description:
-        "After installation, our solar installation partner will do final checks and provide required documents for solar subsidy application. DISCOM officials will visit your home for verification and connect the system to the power grid."
-    }
-  ];
-
+  {
+    icon: <FaFileInvoice />,
+    title: "Request Your On-Grid Solar Quotation",
+    description:
+      "Start your solar journey with BSP Product Solutions by clicking on 'Get Quote' and submitting your details. Share your name, contact number, location, and monthly electricity consumption. Our team reviews your requirement and prepares a customized on-grid solar system quotation tailored to your energy needs."
+  },
+  {
+    icon: <FaUserTie />,
+    title: "Consult With Our Solar Energy Expert",
+    description:
+      "Our experienced energy advisor from BSP Product Solutions will connect with you to understand your power usage and answer all your questions related to rooftop solar installation, net metering, system capacity, and government subsidy. You can also schedule a site visit during this discussion."
+  },
+  {
+    icon: <FaMapMarkedAlt />,
+    title: "Site Inspection & Final Proposal",
+    description:
+      "Our technical team conducts a detailed site inspection to assess rooftop space, shadow analysis, and structural safety. Based on the visit, BSP Product Solutions provides a final quotation along with a proper system design and performance estimation for your on-grid solar power system."
+  },
+  {
+    icon: <FaSolarPanel />,
+    title: "Professional Solar Installation",
+    description:
+      "Once you confirm the proposal, our certified installation partners begin the on-grid solar system installation process. We ensure high-quality solar panels, branded inverters, and MNRE-compliant setup for maximum efficiency and long-term reliability."
+  },
+  {
+    icon: <FaPlug />,
+    title: "Net Metering & Grid Connection",
+    description:
+      "After installation, final safety checks are completed and required documentation is provided for solar subsidy and net metering approval. DISCOM officials verify the system and connect your rooftop solar system to the electricity grid, allowing you to start saving on your power bills immediately."
+  }
+];
   return (
     <section className="Howtoinstall-section">
       <div className="Howtoinstall-container">

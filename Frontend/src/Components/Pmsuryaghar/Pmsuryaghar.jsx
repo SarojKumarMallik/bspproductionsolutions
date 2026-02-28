@@ -118,10 +118,7 @@ const Pmsuryaghar = () => {
               </div>
             </div>
 
-            <button className="eligibility-btn">
-              <span className="btn-icon">🔍</span>
-              Check Eligibility
-            </button>
+            
           </div>
         </div>
       </div>

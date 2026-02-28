@@ -1,6 +1,14 @@
+:root {
+  --bsp-primary: #0b2e46;
+  --bsp-accent: #2E7FBF;
+  --white: #ffffff;
+  --text-light: #5f6f81;
+}
+
+/* ================= SECTION ================= */
 .Contactgetintouch-section {
   padding: 100px 20px;
-  background: linear-gradient(135deg, #f0fdf4, #ffffff);
+  background: var(--white); /* PURE WHITE */
   font-family: 'Poppins', sans-serif;
 }
 
@@ -14,7 +22,7 @@
   justify-content: space-between;
 }
 
-/* LEFT SIDE */
+/* ================= LEFT SIDE ================= */
 .Contactgetintouch-left {
   flex: 1;
 }
@@ -22,7 +30,7 @@
 .Contactgetintouch-subtitle {
   font-size: 14px;
   font-weight: 600;
-  color: #16a34a;
+  color: var(--bsp-primary);
   letter-spacing: 2px;
   margin-bottom: 12px;
   display: inline-block;
@@ -31,14 +39,14 @@
 .Contactgetintouch-title {
   font-size: 44px;
   font-weight: 700;
-  color: #111827;
+  color: var(--bsp-primary);
   margin-bottom: 20px;
   line-height: 1.2;
 }
 
 .Contactgetintouch-description {
   font-size: 16px;
-  color: #6b7280;
+  color: var(--text-light);
   margin-bottom: 40px;
   max-width: 480px;
 }
@@ -64,26 +72,26 @@
 
 .Contactgetintouch-info-card:hover {
   transform: translateY(-5px);
-  border-color: #16a34a;
-  box-shadow: 0 20px 40px rgba(22, 163, 74, 0.15);
+  border-color: var(--bsp-primary);
+  box-shadow: 0 20px 40px rgba(11, 46, 70, 0.12);
 }
 
 .Contactgetintouch-icon {
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, #16a34a, #15803d);
+  background: linear-gradient(135deg, var(--bsp-primary), var(--bsp-accent));
   color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   font-size: 18px;
-  box-shadow: 0 8px 20px rgba(22, 163, 74, 0.3);
+  box-shadow: 0 8px 20px rgba(11, 46, 70, 0.25);
 }
 
 .Contactgetintouch-info-card p {
   font-size: 13px;
-  color: #6b7280;
+  color: var(--text-light);
   margin: 0;
 }
 
@@ -91,15 +99,15 @@
 .Contactgetintouch-info-card span {
   font-size: 16px;
   font-weight: 600;
-  color: #111827;
+  color: var(--bsp-primary);
   text-decoration: none;
 }
 
 .Contactgetintouch-info-card a:hover {
-  color: #16a34a;
+  color: var(--bsp-accent);
 }
 
-/* RIGHT FORM */
+/* ================= RIGHT FORM ================= */
 .Contactgetintouch-right {
   flex: 1;
 }
@@ -107,15 +115,14 @@
 .Contactgetintouch-form {
   padding: 50px;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(229, 231, 235, 0.6);
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 30px 60px rgba(11, 46, 70, 0.08);
   transition: 0.3s ease;
 }
 
 .Contactgetintouch-form:hover {
-  box-shadow: 0 40px 70px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 40px 70px rgba(11, 46, 70, 0.12);
 }
 
 .Contactgetintouch-grid {
@@ -138,8 +145,8 @@
 .Contactgetintouch-form input:focus,
 .Contactgetintouch-form textarea:focus {
   outline: none;
-  border-color: #16a34a;
-  box-shadow: 0 0 0 4px rgba(22, 163, 74, 0.15);
+  border-color: var(--bsp-primary);
+  box-shadow: 0 0 0 4px rgba(11, 46, 70, 0.1);
 }
 
 .Contactgetintouch-form textarea {
@@ -147,8 +154,9 @@
   resize: none;
 }
 
+/* BUTTON */
 .Contactgetintouch-form button {
-  background: linear-gradient(135deg, #16a34a, #15803d);
+  background: linear-gradient(135deg, var(--bsp-primary), var(--bsp-accent));
   border: none;
   padding: 15px 40px;
   border-radius: 50px;
@@ -157,12 +165,26 @@
   font-size: 15px;
   cursor: pointer;
   transition: 0.3s ease;
-  box-shadow: 0 10px 25px rgba(22, 163, 74, 0.3);
+  box-shadow: 0 10px 25px rgba(11, 46, 70, 0.25);
 }
 
 .Contactgetintouch-form button:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(22, 163, 74, 0.4);
+  box-shadow: 0 20px 40px rgba(11, 46, 70, 0.35);
+}
+
+/* SUCCESS & ERROR */
+.success-message {
+  margin-top: 15px;
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.error-message,
+.error {
+  margin-top: 8px;
+  color: #dc2626;
+  font-size: 13px;
 }
 
 /* RESPONSIVE */
@@ -174,6 +196,9 @@
 }
 
 @media (max-width: 768px) {
+  .Contactgetintouch-right {
+    width: 100%;
+  }
   .Contactgetintouch-grid {
     grid-template-columns: 1fr;
   }

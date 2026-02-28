@@ -1,138 +1,218 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Footer.css";
+import logo from "../../assets/img/logo.png";
 
+// React Icons
 import {
+  FaMapMarkerAlt,
+  FaPhone,
+  FaEnvelope,
   FaFacebookF,
+  FaInstagram,
   FaTwitter,
   FaYoutube,
-  FaInstagram,
-  FaArrowUp,
-  FaEnvelope,
-  FaPhoneAlt,
 } from "react-icons/fa";
-import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer className="Footer-hero-wrapper">
-      {/* CTA BAR */}
-      <div className="Footer-hero-cta">
-        <div className="Footer-hero-cta-content">
-          <h2 className="Footer-hero-cta-title">
-            Ready to Switch to Solar?
-          </h2>
-          <p className="Footer-hero-cta-subtitle">
-            Talk to our experts for a free site inspection and customized cost estimation.
-          </p>
-        </div>
+    <footer className="footer">
+      <div className="footer-middle">
+        <div className="footer-container">
+          <div className="footer-columns">
+            {/* Column 1 - Brand + Contact + Social */}
+            <div className="footer-column">
+              {/* Social Media Section */}
+              <div className="footer-social">
+                <div className="social-logo-section">
+                  <img src={logo} alt="BSP Logo" className="social-logo" />
+                </div>
 
-        <div className="Footer-hero-cta-actions">
-          <Link to="/contact">
-  <button className="Footer-hero-cta-btn">
-    Contact BSP Project Solutions
-  </button>
-</Link>
+                {/* ✅ NEW TEXT BELOW LOGO */}
+                <div className="footer-brand-text">
+                  <h4 className="brand-title">BSP Product Solution</h4>
+                  <p className="brand-description">
+                    Delivering innovative solar energy solutions for homes,
+                    businesses, and industries. Empowering a sustainable
+                    tomorrow with reliable, efficient, and affordable renewable
+                    energy systems.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-          <button className="Footer-hero-cta-call">
-            <FaPhoneAlt /> &nbsp;Call: 8018970154
-          </button>
+            {/* Column 2 - Quick Links */}
+            <div className="footer-column">
+              <h3 className="footer-column-title">Quick Links</h3>
+              <ul className="footer-menu">
+                <li>
+                  <Link to="/">Home</Link>
+                </li>
+                <li>
+                  <Link to="/about">About Us</Link>
+                </li>
+                <li>
+                  <Link to="/blog">Blog</Link>
+                </li>
+                <li>
+                  <Link to="/career">Carrer</Link>
+                </li>
+                <li>
+                  <Link to="/contact">Contact Us</Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Column 3 - Categories */}
+            <div className="footer-column">
+              <h3 className="footer-column-title">Our Services</h3>
+              <ul className="footer-categories">
+                <li>
+                  <Link to="/services/on-grid-solar-system">
+                    On Grid Solar System
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/services/hybrid-solar-system">
+                    Hybrid Solar System
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/services/off-grid-solar-system">
+                    Off-Grid Solar System
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/services/solar-amc">Solar AMC</Link>
+                </li>
+                <li>
+                  <Link to="/products/residential-home-solar-system-installation">
+                    Home & Residential
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/products/commercial-industrial-solar-system">
+                    Commercial & Industrial
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Column 4 - Map & Store Info */}
+            <div className="footer-column">
+              <h3 className="footer-column-title">Visit Our Store</h3>
+              <div className="map-container">
+                <div className="map-wrapper">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3119.166912880448!2d86.4162!3d20.499626!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1bdbd8af4f0e67%3A0x5d90eb33c36fbf0c!2sBSP%20PROJECT%20SOLUTIONS%20PVT.LTD!5e1!3m2!1sen!2sin!4v1772303545898!5m2!1sen!2sin"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+                <div className="map-overlay">
+                  <p>
+                    <a
+                      href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3119.166912880448!2d86.4162!3d20.499626!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1bdbd8af4f0e67%3A0x5d90eb33c36fbf0c!2sBSP%20PROJECT%20SOLUTIONS%20PVT.LTD!5e1!3m2!1sen!2sin!4v1772303545898!5m2!1sen!2sin"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <FaMapMarkerAlt /> Kendrapara , Odisha
+                    </a>
+                  </p>
+
+                  <p>
+                    <a
+                      href="tel:+918018970154"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <FaPhone
+                        style={{
+                          transform: "rotate(90deg)",
+                          display: "inline-block",
+                          marginRight: "6px",
+                        }}
+                      />
+                      +91 8018970154
+                    </a>
+                  </p>
+
+                  <p>
+                    <a
+                      href="mailto:store@bsp.com"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <FaEnvelope /> store@bsp.com
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* MAIN FOOTER */}
-      <div className="Footer-hero-main">
-        <div className="Footer-hero-container">
-          {/* BRAND */}
-          <div className="Footer-hero-col Footer-hero-brand">
-            <div className="Footer-hero-logo">
-              <span className="Footer-hero-sun">☀</span> BSPPROJECTSOLUTIONS
+      {/* Bottom Footer */}
+      <div className="footer-bottom">
+        <div className="footer-container">
+          <div className="footer-bottom-content">
+            <div className="footer-copyright">
+              <p>
+                &copy; {new Date().getFullYear()}{" "}
+                <strong>BSP Product Solutions</strong>. All rights reserved.
+              </p>
             </div>
 
-            <p className="Footer-hero-desc">
-             Professional solar installation & energy solutions provider. Powering homes and businesses across Odisha with clean, renewable energy.
+            <div className="social-icons">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon"
+              >
+                <FaFacebookF />
+              </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon"
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon"
+              >
+                <FaTwitter />
+              </a>
+              <a
+                href="https://youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon"
+              >
+                <FaYoutube />
+              </a>
+            </div>
+          </div>
+
+          <div className="footer-credit">
+            <p>
+              Designed with ❤️ by{" "}
+              <a
+                href="https://www.instagram.com/creovatetechnologies/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Creovate Technologies
+              </a>
             </p>
-
-            <div className="Footer-hero-contact">
-              <FaEnvelope /> bspprojectsolutions@gmail.com
-            </div>
-            <div className="Footer-hero-contact">
-              <FaPhoneAlt /> 8018970154
-            </div>
           </div>
-
-          {/* EXPLORE */}
-          <div className="Footer-hero-col">
-            <h4 className="Footer-hero-title">Quick Links</h4>
-            <ul className="Footer-hero-links">
-              <li>About</li>
-              <li>Leadership Team</li>
-              <li>Our Services</li>
-              <li>Recent Projects</li>
-              <li>Contact</li>
-            </ul>
-          </div>
-
-          {/* SERVICES */}
-          <div className="Footer-hero-col">
-            <h4 className="Footer-hero-title">Services</h4>
-            <ul className="Footer-hero-links">
-              <li>Residential Solar</li>
-              <li>Commercial Solar</li>
-              <li>On-Grid Systems</li>
-              <li>Off-Grid Systems</li>
-              <li>AMC Support</li>
-            </ul>
-          </div>
-
-          {/* CONTACT */}
-          <div className="Footer-hero-col">
-            <h4 className="Footer-hero-title">Visit Us</h4>
-            <p className="Footer-hero-address">
-              Near Sadar Police Station,
-              <br />
-              Kendrapara, Odisha
-            </p>
-
-            <div className="Footer-hero-socials">
-              <span><FaFacebookF /></span>
-              <span><FaTwitter /></span>
-              <span><FaYoutube /></span>
-              <span><FaInstagram /></span>
-            </div>
-          </div>
-        </div>
-
-        {/* BOTTOM */}
-        <div className="Footer-hero-bottom">
-          <p>
-  © Copyrights are Reserved by{" "}
-  <a
-    href="https://www.bspprojectsolutions.co.in/"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    bspprojectsolutions
-  </a>{" "}
-  | Developed by{" "}
-  <a
-    href="https://www.instagram.com/creovatetechnologies/"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Creovate Technologies
-  </a>
-</p>
-
         </div>
       </div>
-
-      {/* SCROLL TO TOP */}
-      <button
-        className="Footer-hero-scroll"
-        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      >
-        <FaArrowUp />
-      </button>
     </footer>
   );
 };

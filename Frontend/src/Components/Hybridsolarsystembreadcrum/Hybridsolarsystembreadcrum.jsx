@@ -27,9 +27,7 @@ const Hybridsolarsystembreadcrum = () => {
                 Home
               </Link>
               <span className="separator"> / </span>
-              <Link to="/services" className="home">
-                Services
-              </Link>
+              <span style={{ color: "white" }}>Services</span>
               <span className="separator"> / </span>
               <span className="active">Hybrid Solar System</span>
             </div>

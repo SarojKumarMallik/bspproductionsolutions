@@ -94,16 +94,7 @@ const Vendor = () => {
           {/* Finance Block */}
           <div className="vendor_block finance_block">
             <div className="block_header">
-              <div className="block_icon finance_icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 7.5a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z" />
-                  <path
-                    fillRule="evenodd"
-                    d="M1.5 4.875C1.5 3.839 2.34 3 3.375 3h17.25c1.035 0 1.875.84 1.875 1.875v9.75c0 1.036-.84 1.875-1.875 1.875H3.375A1.875 1.875 0 011.5 14.625v-9.75z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </div>
+             
               <div className="block_title_content">
                 <h3>Banking Partners</h3>
                 <p>Easy finance assistance</p>
@@ -125,15 +116,7 @@ const Vendor = () => {
           {/* Vendor Block */}
           <div className="vendor_block vendor_block_secondary">
             <div className="block_header">
-              <div className="block_icon vendor_icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                  <path
-                    fillRule="evenodd"
-                    d="M8.603 3.799A4.49 4.49 0 0112 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 013.498 1.307 4.491 4.491 0 011.307 3.497A4.49 4.49 0 0121.75 12a4.49 4.49 0 01-1.549 3.397 4.491 4.491 0 01-1.307 3.497 4.491 4.491 0 01-3.497 1.307A4.49 4.49 0 0112 21.75a4.49 4.49 0 01-3.397-1.549"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </div>
+             
               <div className="block_title_content">
                 <h3>Registered Vendor</h3>
                 <p>Authorized distribution partner</p>

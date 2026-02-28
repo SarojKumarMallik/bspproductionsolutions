@@ -17,8 +17,9 @@ const Projects = () => {
     <Residentialinstallationinhome/>
     <Residentialhomesolarsystem/>
     <Residentialourplatform/>
-    <Residentialhomesolarinstallers/>
     <Residentialfaq/>
+    <Residentialhomesolarinstallers/>
+    
     </>
   )
 }

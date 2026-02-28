@@ -27,9 +27,7 @@ const Solaramcbreadcrum = () => {
                     Home
                   </Link>
                   <span className="separator"> / </span>
-                  <Link to="/services" className="home">
-                    Services
-                  </Link>
+                  <span style={{ color: "white" }}>Services</span>
                   <span className="separator"> / </span>
                   <span className="active">Solar AMC</span>
                 </div>

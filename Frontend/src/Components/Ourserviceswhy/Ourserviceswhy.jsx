@@ -1,80 +1,103 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {
+  FaSolarPanel,
+  FaBatteryFull,
+  FaBolt,
+  FaHome,
+  FaIndustry,
+  FaTools,
+  FaCheckCircle
+} from "react-icons/fa";
 import "./Ourserviceswhy.css";
 
 const Ourserviceswhy = () => {
+
   const services = [
-    { name: "On Grid Solar System", icon: "☀️", link: "/" },
-    { name: "Off Grid Solar System", icon: "🔋", link: "/" },
-    { name: "Hybrid Solar System", icon: "⚡", link: "/" },
-    { name: "Residential", icon: "🏠", link: "/" },
-    { name: "Industrial", icon: "🏭", link: "/" },
-    { name: "Solar AMC", icon: "🔧", link: "/" },
+    {
+      name: "On Grid Solar System",
+      icon: <FaSolarPanel />,
+      link: "/services/on-grid-solar-system",
+      active: true   // ✅ ACTIVE
+    },
+    {
+      name: "Off Grid Solar System",
+      icon: <FaBatteryFull />,
+      link: "/services/off-grid-solar-system"
+    },
+    {
+      name: "Hybrid Solar System",
+      icon: <FaBolt />,
+      link: "/services/hybrid-solar-system"
+    },
+    {
+      name: "Residential",
+      icon: <FaHome />,
+      link: "/services/residential"
+    },
+    {
+      name: "Industrial",
+      icon: <FaIndustry />,
+      link: "/services/industrial"
+    },
+    {
+      name: "Solar AMC",
+      icon: <FaTools />,
+      link: "/services/solar-amc"
+    }
   ];
 
   const reasons = [
-    {
-      title: "On-Grid Solar Quotation",
-      description:
-        "We send detailed quotation before installation with pricing, warranty & product info.",
-      icon: "📄",
-      highlight: true,
-    },
-    {
-      title: "Experienced Installation Partners",
-      description:
-        "Trusted installation experts ensuring quality & reliable service.",
-      icon: "👥",
-    },
-    {
-      title: "Time-Saving Process",
-      description:
-        "No need to contact multiple vendors — we manage everything.",
-      icon: "⏱️",
-    },
-    {
-      title: "24/7 Support",
-      description:
-        "Continuous after-sales support and expert energy guidance.",
-      icon: "🛟",
-    },
-    {
-      title: "Zero Spam Calls",
-      description:
-        "We respect your privacy — no unnecessary follow-ups.",
-      icon: "🚫",
-    },
-  ];
+  {
+    title: "Transparent On-Grid Solar Quotation",
+    desc: "At BSP Product Solutions, we provide a detailed and transparent on-grid solar quotation before installation. You receive complete clarity on system cost, solar panel specifications, inverter details, warranty coverage, and expected savings — so you can make an informed investment decision."
+  },
+  {
+    title: "Experienced & Certified Installation Partners",
+    desc: "BSP Product Solutions works with experienced and trusted on-grid solar installation partners to ensure high-quality workmanship, MNRE-compliant systems, and long-term performance. Our expert team ensures safe and professional rooftop solar installation."
+  },
+  {
+    title: "Hassle-Free & Time-Saving Process",
+    desc: "With BSP Product Solutions, you don’t need to contact multiple solar companies separately. We handle everything from site assessment and system design to net metering documentation and final installation — saving you valuable time and effort."
+  },
+  {
+    title: "24/7 After-Sales Support",
+    desc: "When you choose BSP Product Solutions, you receive reliable 24/7 after-sales support. Our experienced solar energy advisors are always available to guide you regarding system performance, maintenance, and subsidy assistance."
+  },
+  {
+    title: "No Spam Calls — Complete Privacy",
+    desc: "Unlike many solar platforms, BSP Product Solutions respects your privacy. We do not make repeated promotional calls. Our approach is simple — professional consultation, honest pricing, and customer-first service."
+  }
+];
 
   return (
     <section className="Ourserviceswhy-wrapper">
       <div className="Ourserviceswhy-container">
 
-        {/* LEFT SIDE */}
+        {/* LEFT PANEL */}
         <div className="Ourserviceswhy-left">
-          <span className="Ourserviceswhy-badge">
-            WHAT WE OFFER
-          </span>
+
           <h2 className="Ourserviceswhy-title">
-            Our Services
+            Solar Solutions
           </h2>
-          <p className="Ourserviceswhy-sub">
-            Smart solar solutions designed for homes & businesses.
-          </p>
 
           <div className="Ourserviceswhy-services">
             {services.map((item, index) => (
               <Link
                 to={item.link}
                 key={index}
-                className="Ourserviceswhy-service"
+                className={`Ourserviceswhy-service ${
+                  item.active ? "Ourserviceswhy-active" : ""
+                }`}
               >
                 <span className="Ourserviceswhy-icon">
                   {item.icon}
                 </span>
+
                 <span className="Ourserviceswhy-name">
                   {item.name}
                 </span>
+
                 <span className="Ourserviceswhy-arrow">
                   →
                 </span>
@@ -83,42 +106,30 @@ const Ourserviceswhy = () => {
           </div>
         </div>
 
-        {/* RIGHT SIDE */}
+        {/* RIGHT CONTENT */}
         <div className="Ourserviceswhy-right">
-          <span className="Ourserviceswhy-badge Ourserviceswhy-gold">
-            WHY RANA SOLAR
-          </span>
 
-          <h2 className="Ourserviceswhy-title">
-            Why Choose Us for{" "}
-            <span>On-Grid Installation?</span>
+          <h2 className="Ourserviceswhy-main-title">
+            Why Should You Choose Rana Solar Power for <br />
+            <span>On-Grid Solar Installation?</span>
           </h2>
+
+          <p className="Ourserviceswhy-intro">
+            Here are the top reasons to contact Rana Solar Power for your on-grid solar system installation:
+          </p>
 
           <div className="Ourserviceswhy-reasons">
             {reasons.map((item, index) => (
-              <div
-                key={index}
-                className={`Ourserviceswhy-reason ${
-                  item.highlight ? "Ourserviceswhy-highlight" : ""
-                }`}
-              >
-                <div className="Ourserviceswhy-reason-icon">
-                  {item.icon}
-                </div>
+              <div key={index} className="Ourserviceswhy-reason">
+                <FaCheckCircle className="Ourserviceswhy-check" />
                 <div>
                   <h4>{item.title}</h4>
-                  <p>{item.description}</p>
+                  <p>{item.desc}</p>
                 </div>
               </div>
             ))}
           </div>
 
-          <Link
-            to="/"
-            className="Ourserviceswhy-cta"
-          >
-            Connect with Energy Advisors →
-          </Link>
         </div>
 
       </div>

@@ -17,6 +17,7 @@ import Offgridsolarsystem from "./Pages/Offgridsolarsystem/Offgridsolarsystem";
 import Career from "./Pages/Career/Career";
 import Solaramc from "./Pages/Solaramc/Solaramc";
 import Projects from "./Pages/Projects/Projects";
+import Commercialindustrial from "./Pages/Commercialindustrial/Commercialindustrial";
 
 function App() {
   const location = useLocation(); // 👈 detect route change
@@ -80,6 +81,10 @@ function App() {
         <Route
           path="/projects/residential-home-solar-system-installation"
           element={<Projects />}
+        />
+        <Route
+          path="/projects/commercial-industrial-solar-system"
+          element={<Commercialindustrial />}
         />
         <Route path="/contact" element={<Contact />} />
         <Route path="/career" element={<Career />} />

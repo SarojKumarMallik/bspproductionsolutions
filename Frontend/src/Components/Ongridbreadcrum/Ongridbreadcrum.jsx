@@ -27,9 +27,7 @@ const Ongridbreadcrum = () => {
             Home
           </Link>
           <span className="separator"> / </span>
-          <Link to="/services" className="home">
-            Services
-          </Link>
+          <span style={{ color: "white" }}>Services</span>
           <span className="separator"> / </span>
           <span className="active">On Grid Solar System</span>
         </div>

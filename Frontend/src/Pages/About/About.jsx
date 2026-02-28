@@ -13,8 +13,9 @@ const About = () => {
     <AboutBreadcrumb/>
     <Aboutcontent/>
     <Brands/>
-    <Ourteam/>
     <Additionalsupport/>
+    <Ourteam/>
+    
     <Whybspproject/>
     <Testimonial/>
     

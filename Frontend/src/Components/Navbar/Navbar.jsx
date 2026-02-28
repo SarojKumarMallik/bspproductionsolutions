@@ -22,7 +22,7 @@ import {
   FaInfoCircle,
   FaEnvelope as FaContact,
   FaTimes,
-  FaBars
+  FaBars,
 } from "react-icons/fa";
 
 import logo from "../../assets/img/logo.png";
@@ -30,7 +30,6 @@ import pmsurya from "../../assets/img/PMSG+logo.png";
 import tatapower from "../../assets/img/Tata+Power+logo.png";
 
 const Navbar = () => {
-
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -66,7 +65,6 @@ const Navbar = () => {
       {/* ================= PREMIUM TOPBAR ================= */}
       <div className="Navbar-topbar">
         <div className="Navbar-topbar-container">
-
           <div className="Navbar-top-left">
             <div className="Navbar-contact-item">
               <FaPhoneAlt className="Navbar-contact-icon" />
@@ -84,39 +82,62 @@ const Navbar = () => {
               <span className="Navbar-badge-text">PM-Surya Ghar Approved</span>
             </div>
             <div className="Navbar-badge">
-              <img src={tatapower} alt="Tata Solar" className="Navbar-badge-logo" />
+              <img
+                src={tatapower}
+                alt="Tata Solar"
+                className="Navbar-badge-logo"
+              />
               <span className="Navbar-badge-text">Authorized Tata Partner</span>
             </div>
           </div>
 
           <div className="Navbar-top-right">
-            <a href="#" className="Navbar-social-link"><FaFacebookF /></a>
-            <a href="#" className="Navbar-social-link"><FaYoutube /></a>
-            <a href="#" className="Navbar-social-link"><FaGoogle /></a>
-            <a href="#" className="Navbar-social-link"><FaInstagram /></a>
-            <a href="#" className="Navbar-social-link"><FaLinkedinIn /></a>
-            <a href="#" className="Navbar-social-link"><FaWhatsapp /></a>
+            <a href="#" className="Navbar-social-link">
+              <FaFacebookF />
+            </a>
+            <a href="#" className="Navbar-social-link">
+              <FaYoutube />
+            </a>
+            <a href="#" className="Navbar-social-link">
+              <FaGoogle />
+            </a>
+            <a href="#" className="Navbar-social-link">
+              <FaInstagram />
+            </a>
+            <a href="#" className="Navbar-social-link">
+              <FaLinkedinIn />
+            </a>
+            <a href="#" className="Navbar-social-link">
+              <FaWhatsapp />
+            </a>
           </div>
-
         </div>
       </div>
 
       {/* ================= MAIN NAVBAR ================= */}
       <header className={`navbar ${scrolled ? "scrolled" : ""}`}>
         <div className="navbar-container">
-
           <NavLink to="/" className="navbar-logo" onClick={closeMobileMenu}>
             <img src={logo} alt="BSP Project Solutions" />
           </NavLink>
 
           {/* DESKTOP MENU (UNCHANGED) */}
           <nav className="navbar-menu">
-
-            <NavLink to="/" className={({isActive}) => `nav-item ${isActive ? "active" : ""}`}>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                `nav-item ${isActive ? "active" : ""}`
+              }
+            >
               Home
             </NavLink>
 
-            <NavLink to="/about" className={({isActive}) => `nav-item ${isActive ? "active" : ""}`}>
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                `nav-item ${isActive ? "active" : ""}`
+              }
+            >
               About Us
             </NavLink>
 
@@ -128,16 +149,21 @@ const Navbar = () => {
             >
               <span className="dropdown-trigger">
                 Services
-                <FaChevronDown className={`arrow ${activeDropdown === "services" ? "rotated" : ""}`} />
+                <FaChevronDown
+                  className={`arrow ${activeDropdown === "services" ? "rotated" : ""}`}
+                />
               </span>
 
-              <div className={`dropdown-menu ${activeDropdown === "services" ? "show" : ""}`}>
-
+              <div
+                className={`dropdown-menu ${activeDropdown === "services" ? "show" : ""}`}
+              >
                 <NavLink to="/services/on-grid-solar-system">
                   <FaBolt className="dropdown-icon" />
                   <div className="dropdown-text">
                     <span className="dropdown-title">On Grid Solar System</span>
-                    <span className="dropdown-desc">Grid-connected solution</span>
+                    <span className="dropdown-desc">
+                      Grid-connected solution
+                    </span>
                   </div>
                 </NavLink>
 
@@ -164,7 +190,6 @@ const Navbar = () => {
                     <span className="dropdown-desc">Maintenance Support</span>
                   </div>
                 </NavLink>
-
               </div>
             </div>
 
@@ -176,41 +201,57 @@ const Navbar = () => {
             >
               <span className="dropdown-trigger">
                 Projects
-                <FaChevronDown className={`arrow ${activeDropdown === "projects" ? "rotated" : ""}`} />
+                <FaChevronDown
+                  className={`arrow ${activeDropdown === "projects" ? "rotated" : ""}`}
+                />
               </span>
 
-              <div className={`dropdown-menu ${activeDropdown === "projects" ? "show" : ""}`}>
-
+              <div
+                className={`dropdown-menu ${activeDropdown === "projects" ? "show" : ""}`}
+              >
                 <NavLink to="/projects/residential-home-solar-system-installation">
                   <FaHome className="dropdown-icon" />
                   <div className="dropdown-text">
                     <span className="dropdown-title">Homes & Residential</span>
-                    
                   </div>
                 </NavLink>
 
-                <NavLink to="/commercial">
+                <NavLink to="/projects/commercial-industrial-solar-system">
                   <FaBuilding className="dropdown-icon" />
                   <div className="dropdown-text">
-                    <span className="dropdown-title">Commercial & Industrial</span>
-                   
+                    <span className="dropdown-title">
+                      Commercial & Industrial
+                    </span>
                   </div>
                 </NavLink>
-
               </div>
             </div>
 
-            <NavLink to="/blog" className={({isActive}) => `nav-item ${isActive ? "active" : ""}`}>
+            <NavLink
+              to="/blog"
+              className={({ isActive }) =>
+                `nav-item ${isActive ? "active" : ""}`
+              }
+            >
               Blog
             </NavLink>
-          <NavLink to="/career" className={({isActive}) => `nav-item ${isActive ? "active" : ""}`}>
-  Career
-</NavLink>
-
-            <NavLink to="/contact" className={({isActive}) => `nav-item ${isActive ? "active" : ""}`}>
-              Contact Us
+            <NavLink
+              to="/career"
+              className={({ isActive }) =>
+                `nav-item ${isActive ? "active" : ""}`
+              }
+            >
+              Career
             </NavLink>
 
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                `nav-item ${isActive ? "active" : ""}`
+              }
+            >
+              Contact Us
+            </NavLink>
           </nav>
 
           <div className="navbar-actions">
@@ -224,13 +265,11 @@ const Navbar = () => {
               {mobileMenuOpen ? <FaTimes /> : <FaBars />}
             </button>
           </div>
-
         </div>
       </header>
 
       {/* ================= MOBILE MENU ================= */}
       <div className={`mobile-menu ${mobileMenuOpen ? "open" : ""}`}>
-
         <div className="mobile-menu-header">
           <NavLink to="/" className="mobile-logo" onClick={closeMobileMenu}>
             <img src={logo} alt="BSP Project Solutions" />
@@ -241,12 +280,15 @@ const Navbar = () => {
         </div>
 
         <nav className="mobile-nav">
-
           <NavLink to="/" className="mobile-nav-item" onClick={closeMobileMenu}>
             <FaHome /> Home
           </NavLink>
 
-          <NavLink to="/about" className="mobile-nav-item" onClick={closeMobileMenu}>
+          <NavLink
+            to="/about"
+            className="mobile-nav-item"
+            onClick={closeMobileMenu}
+          >
             <FaInfoCircle /> About
           </NavLink>
 
@@ -257,15 +299,30 @@ const Navbar = () => {
               onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
               style={{ cursor: "pointer" }}
             >
-              <FaInfoCircle /> Services <FaChevronDown style={{ marginLeft: "auto" }} />
+              <FaInfoCircle /> Services{" "}
+              <FaChevronDown style={{ marginLeft: "auto" }} />
             </div>
 
             {mobileServicesOpen && (
               <div className="mobile-dropdown-menu">
-                <NavLink to="/services/on-grid-solar-system" onClick={closeMobileMenu}>On Grid Solar</NavLink>
-                <NavLink to="/services/hybrid-solar-system" onClick={closeMobileMenu}>Hybrid Solar</NavLink>
-                <NavLink to="/services/off-grid" onClick={closeMobileMenu}>Off Grid Solar</NavLink>
-                <NavLink to="/services/solar-amc" onClick={closeMobileMenu}>Solar AMC</NavLink>
+                <NavLink
+                  to="/services/on-grid-solar-system"
+                  onClick={closeMobileMenu}
+                >
+                  On Grid Solar
+                </NavLink>
+                <NavLink
+                  to="/services/hybrid-solar-system"
+                  onClick={closeMobileMenu}
+                >
+                  Hybrid Solar
+                </NavLink>
+                <NavLink to="/services/off-grid" onClick={closeMobileMenu}>
+                  Off Grid Solar
+                </NavLink>
+                <NavLink to="/services/solar-amc" onClick={closeMobileMenu}>
+                  Solar AMC
+                </NavLink>
               </div>
             )}
           </div>
@@ -277,28 +334,50 @@ const Navbar = () => {
               onClick={() => setMobileProjectsOpen(!mobileProjectsOpen)}
               style={{ cursor: "pointer" }}
             >
-              <FaBuilding /> Projects <FaChevronDown style={{ marginLeft: "auto" }} />
+              <FaBuilding /> Projects{" "}
+              <FaChevronDown style={{ marginLeft: "auto" }} />
             </div>
 
             {mobileProjectsOpen && (
               <div className="mobile-dropdown-menu">
-                <NavLink to="/projects/residential-home-solar-system-installation" onClick={closeMobileMenu}>Residential</NavLink>
-                <NavLink to="/commercial" onClick={closeMobileMenu}>Commercial</NavLink>
+                <NavLink
+                  to="/projects/residential-home-solar-system-installation"
+                  onClick={closeMobileMenu}
+                >
+                  Residential
+                </NavLink>
+                <NavLink
+                  to="/projects/commercial-industrial-solar-system"
+                  onClick={closeMobileMenu}
+                >
+                  Commercial
+                </NavLink>
               </div>
             )}
           </div>
 
-          <NavLink to="/blog" className="mobile-nav-item" onClick={closeMobileMenu}>
+          <NavLink
+            to="/blog"
+            className="mobile-nav-item"
+            onClick={closeMobileMenu}
+          >
             <FaNewspaper /> Blog
           </NavLink>
-          <NavLink to="/career" className="mobile-nav-item" onClick={closeMobileMenu}>
+          <NavLink
+            to="/career"
+            className="mobile-nav-item"
+            onClick={closeMobileMenu}
+          >
             <FaNewspaper /> Career
           </NavLink>
 
-          <NavLink to="/contact" className="mobile-nav-item" onClick={closeMobileMenu}>
+          <NavLink
+            to="/contact"
+            className="mobile-nav-item"
+            onClick={closeMobileMenu}
+          >
             <FaContact /> Contact
           </NavLink>
-
         </nav>
       </div>
     </>

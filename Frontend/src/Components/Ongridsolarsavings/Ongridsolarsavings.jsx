@@ -16,7 +16,7 @@ const Ongridsolarsavings = () => {
           </p>
           <div className="header-divider">
             <span className="divider-line"></span>
-            <span className="divider-icon">📊</span>
+            
             <span className="divider-line"></span>
           </div>
         </div>

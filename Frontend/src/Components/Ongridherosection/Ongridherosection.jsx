@@ -7,21 +7,24 @@ const Ongridherosection = () => {
   return (
     <section className="ongrid-hero">
       <div className="ongrid-container">
-
         {/* LEFT CONTENT */}
         <div className="ongrid-content">
           <h1>
-            On Grid <span>Solar System Installation</span>
+            On Grid <span>Solar System Installation in Odisha</span>
           </h1>
 
           <p className="ongrid-description">
-            We at <strong>Rana Solar Power</strong> help you complete on-grid solar
-            system installation across India following MNRE guidelines.
-            Install your grid-connected solar power system at an affordable
-            price and save up to <strong>95% on your monthly electricity bills.</strong>
+            At <strong>BSP Product Solutions</strong>, we deliver end-to-end
+            on-grid solar system installation across India as per MNRE
+            standards. Get your grid-connected solar power system installed at
+            an affordable cost and cut down up to 95% of your monthly
+            electricity bills.
+          </p>
+          <p className="ongrid-description">
+            Serving Bhubaneswar, Cuttack, Puri, Berhampur, Rourkela , Kendrapara and across
+            Odisha.
           </p>
 
-          {/* BENEFITS */}
           <div className="ongrid-benefits">
             <div className="benefit-item">
               <FaSolarPanel className="benefit-icon" />
@@ -39,7 +42,6 @@ const Ongridherosection = () => {
             </div>
           </div>
 
-          {/* BUTTONS */}
           <div className="ongrid-buttons">
             <a href="/contact" className="primary-btn">
               Get Free Consultation
@@ -55,7 +57,6 @@ const Ongridherosection = () => {
         <div className="ongrid-image">
           <img src={ongridimg} alt="On Grid Solar System Diagram" />
         </div>
-
       </div>
     </section>
   );

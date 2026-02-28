@@ -1,7 +1,15 @@
+:root {
+  --bsp-primary: #0b2e46;
+  --bsp-secondary: #123c5a;
+  --bsp-accent: #2E7FBF;
+  --white: #ffffff;
+  --light-white: #e2e8f0;
+}
+
 /* ================= SECTION ================= */
 .bspwhy {
-  padding: 50px 0;
-  background: linear-gradient(180deg, #f8fbff, #ffffff);
+  padding: 70px 0;
+  background: linear-gradient(135deg, var(--bsp-primary), var(--bsp-secondary));
 }
 
 .bspwhy_container {
@@ -17,25 +25,16 @@
   margin: 0 auto 80px;
 }
 
-.bspwhy_tag {
-  display: inline-block;
-  margin-bottom: 14px;
-  font-size: 12px;
-  letter-spacing: 2px;
-  font-weight: 600;
-  color: #2563eb;
-}
-
 .bspwhy_header h2 {
   font-size: 48px;
   font-weight: 800;
-  color: #0f172a;
+  color: var(--white);
   margin-bottom: 18px;
 }
 
 .bspwhy_header p {
   font-size: 17px;
-  color: #64748b;
+  color: var(--light-white);
   line-height: 1.7;
 }
 
@@ -47,7 +46,7 @@
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(37, 99, 235, 0.35),
+    rgba(255, 255, 255, 0.4),
     transparent
   );
 }
@@ -61,18 +60,19 @@
 
 /* CARD */
 .bspwhy_card {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
   border-radius: 22px;
   padding: 40px 32px;
   text-align: center;
-  border: 1px solid #e5e7eb;
+  border: 1px solid rgba(255, 255, 255, 0.15);
   transition: all 0.35s ease;
 }
 
 .bspwhy_card:hover {
   transform: translateY(-10px);
-  border-color: #2563eb;
-  box-shadow: 0 20px 45px rgba(37, 99, 235, 0.12);
+  border-color: var(--bsp-accent);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
 }
 
 /* ICON */
@@ -81,25 +81,26 @@
   height: 72px;
   margin: 0 auto 26px;
   border-radius: 18px;
-  background: linear-gradient(135deg, #2563eb, #38bdf8);
+  background: linear-gradient(135deg, var(--bsp-accent), #1e90ff);
   display: flex;
   align-items: center;
   justify-content: center;
   color: #ffffff;
   font-size: 28px;
+  box-shadow: 0 10px 25px rgba(46, 127, 191, 0.4);
 }
 
 /* TEXT */
 .bspwhy_card h4 {
   font-size: 21px;
   font-weight: 700;
-  color: #0f172a;
+  color: var(--white);
   margin-bottom: 14px;
 }
 
 .bspwhy_card p {
   font-size: 15px;
-  color: #64748b;
+  color: var(--light-white);
   line-height: 1.7;
 }
 

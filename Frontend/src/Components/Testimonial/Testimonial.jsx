@@ -152,11 +152,11 @@ const Testimonial = () => {
             </div>
 
             {/* Slide Counter */}
-            <div className="slide_counter">
+            {/* <div className="slide_counter">
               <span className="current_number">{String(active + 1).padStart(2, '0')}</span>
               <span className="counter_divider">/</span>
               <span className="total_number">{String(testimonials.length).padStart(2, '0')}</span>
-            </div>
+            </div> */}
           </div>
 
           {/* Navigation Arrows */}
