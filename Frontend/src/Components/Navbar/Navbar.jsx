@@ -157,7 +157,7 @@ const Navbar = () => {
                   </div>
                 </NavLink>
 
-                <NavLink to="/solar-amc">
+                <NavLink to="/services/solar-amc">
                   <FaTools className="dropdown-icon" />
                   <div className="dropdown-text">
                     <span className="dropdown-title">Solar AMC</span>
@@ -181,19 +181,19 @@ const Navbar = () => {
 
               <div className={`dropdown-menu ${activeDropdown === "projects" ? "show" : ""}`}>
 
-                <NavLink to="/residential">
+                <NavLink to="/projects/residential-home-solar-system-installation">
                   <FaHome className="dropdown-icon" />
                   <div className="dropdown-text">
-                    <span className="dropdown-title">Residential</span>
-                    <span className="dropdown-desc">Homes & Villas</span>
+                    <span className="dropdown-title">Homes & Residential</span>
+                    
                   </div>
                 </NavLink>
 
                 <NavLink to="/commercial">
                   <FaBuilding className="dropdown-icon" />
                   <div className="dropdown-text">
-                    <span className="dropdown-title">Commercial</span>
-                    <span className="dropdown-desc">Industrial Installations</span>
+                    <span className="dropdown-title">Commercial & Industrial</span>
+                   
                   </div>
                 </NavLink>
 
@@ -264,8 +264,8 @@ const Navbar = () => {
               <div className="mobile-dropdown-menu">
                 <NavLink to="/services/on-grid-solar-system" onClick={closeMobileMenu}>On Grid Solar</NavLink>
                 <NavLink to="/services/hybrid-solar-system" onClick={closeMobileMenu}>Hybrid Solar</NavLink>
-                <NavLink to="/off-grid" onClick={closeMobileMenu}>Off Grid Solar</NavLink>
-                <NavLink to="/solar-amc" onClick={closeMobileMenu}>Solar AMC</NavLink>
+                <NavLink to="/services/off-grid" onClick={closeMobileMenu}>Off Grid Solar</NavLink>
+                <NavLink to="/services/solar-amc" onClick={closeMobileMenu}>Solar AMC</NavLink>
               </div>
             )}
           </div>
@@ -282,7 +282,7 @@ const Navbar = () => {
 
             {mobileProjectsOpen && (
               <div className="mobile-dropdown-menu">
-                <NavLink to="/residential" onClick={closeMobileMenu}>Residential</NavLink>
+                <NavLink to="/projects/residential-home-solar-system-installation" onClick={closeMobileMenu}>Residential</NavLink>
                 <NavLink to="/commercial" onClick={closeMobileMenu}>Commercial</NavLink>
               </div>
             )}

@@ -15,6 +15,8 @@ import Floatingcontact from "./Components/Floatingcontact/Floatingcontact";
 import Hybridsolarsystem from "./Pages/Hybridsolarsystem/Hybridsolarsystem";
 import Offgridsolarsystem from "./Pages/Offgridsolarsystem/Offgridsolarsystem";
 import Career from "./Pages/Career/Career";
+import Solaramc from "./Pages/Solaramc/Solaramc";
+import Projects from "./Pages/Projects/Projects";
 
 function App() {
   const location = useLocation(); // 👈 detect route change
@@ -70,6 +72,14 @@ function App() {
         <Route
           path="/services/off-grid-solar-system"
           element={<Offgridsolarsystem />}
+        />
+        <Route
+          path="/services/solar-amc"
+          element={<Solaramc />}
+        />
+        <Route
+          path="/projects/residential-home-solar-system-installation"
+          element={<Projects />}
         />
         <Route path="/contact" element={<Contact />} />
         <Route path="/career" element={<Career />} />
