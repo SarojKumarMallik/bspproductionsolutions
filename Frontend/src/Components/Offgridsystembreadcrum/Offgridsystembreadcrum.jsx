@@ -1,6 +1,6 @@
 import React from 'react'
 import "../Aboutbreadcrum/Aboutbreadcrum.css";
-import about from "../../assets/img/about.webp";
+import about from "../../assets/img/offgrid_bread.webp";
 import { Link } from "react-router-dom";
 const Offgridsystembreadcrum = () => {
   return (

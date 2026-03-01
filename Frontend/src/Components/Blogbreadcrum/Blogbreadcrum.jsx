@@ -1,10 +1,10 @@
 import React from 'react'
 import "../Aboutbreadcrum/Aboutbreadcrum.css";
-import about from "../../assets/img/carrer.webp";
+import about from "../../assets/img/about.webp";
 import { Link } from "react-router-dom";
-const Careerbreadcrum = () => {
+const Blogbreadcrum = () => {
   return (
-    <section className="Contactbreadcrum">
+      <section className="Contactbreadcrum">
    
          {/* Background Image */}
          <img
@@ -21,12 +21,12 @@ const Careerbreadcrum = () => {
    
          {/* Content */}
          <div className="Contactbreadcrum-content">
-           <h1>Career</h1>
+           <h1>Blogs</h1>
    
           <div className="Contactbreadcrum-breadcrumb">
      <Link to="/" className="home">Home</Link>
      <span className="separator"> / </span>
-     <span className="active">Career</span>
+     <span className="active">Blogs</span>
    </div>
    
          </div>
@@ -35,4 +35,4 @@ const Careerbreadcrum = () => {
   )
 }
 
-export default Careerbreadcrum
+export default Blogbreadcrum

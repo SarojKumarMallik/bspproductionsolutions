@@ -6,8 +6,8 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 const Floatingcontact = () => {
   const [open, setOpen] = useState(true);
 
-  const whatsappNumber = "919775353642";
-  const callNumber = "9775353642";
+  const whatsappNumber = "8018970154";
+  const callNumber = "8018970154";
 
   const message =
     "Hello! I am interested in installing a solar system. Please guide me.";

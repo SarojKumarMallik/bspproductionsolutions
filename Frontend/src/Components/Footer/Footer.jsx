@@ -52,7 +52,7 @@ const Footer = () => {
                   <Link to="/about">About Us</Link>
                 </li>
                 <li>
-                  <Link to="/blog">Blog</Link>
+                  <Link to="/blogs">Blog</Link>
                 </li>
                 <li>
                   <Link to="/career">Carrer</Link>
@@ -139,10 +139,10 @@ const Footer = () => {
 
                   <p>
                     <a
-                      href="mailto:store@bsp.com"
+                      href="mailto:bspprojectsolutions@gmail.com"
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
-                      <FaEnvelope /> store@bsp.com
+                      <FaEnvelope /> bspprojectsolutions@gmail.com
                     </a>
                   </p>
                 </div>

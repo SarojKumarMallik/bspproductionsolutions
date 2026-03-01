@@ -1,6 +1,6 @@
 import React from "react";
 import "../Aboutbreadcrum/Aboutbreadcrum";
-import about from "../../assets/img/about.webp";
+import about from "../../assets/img/ongrid.webp";
 import { Link } from "react-router-dom";
 const Ongridbreadcrum = () => {
   return (

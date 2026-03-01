@@ -1,6 +1,6 @@
 import React from 'react'
 import "../Aboutbreadcrum/Aboutbreadcrum.css";
-import about from "../../assets/img/inner-hero003.jpg";
+import about from "../../assets/img/solaramc_bread.webp";
 import { Link } from "react-router-dom";
 const Solaramcbreadcrum = () => {
   return (

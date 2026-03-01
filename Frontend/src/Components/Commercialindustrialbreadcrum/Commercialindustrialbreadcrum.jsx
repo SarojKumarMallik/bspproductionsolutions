@@ -1,6 +1,6 @@
 import React from 'react'
 import "../Aboutbreadcrum/Aboutbreadcrum.css";
-import about from "../../assets/img/inner-hero002.jpg";
+import about from "../../assets/img/commercial-industrial-solar-system.webp";
 import { Link } from "react-router-dom";
 const Commercialindustrialbreadcrum = () => {
   return (

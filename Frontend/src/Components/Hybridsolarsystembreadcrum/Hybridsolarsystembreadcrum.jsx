@@ -1,6 +1,6 @@
 import React from 'react'
 import "../Aboutbreadcrum/Aboutbreadcrum.css";
-import about from "../../assets/img/about.webp";
+import about from "../../assets/img/hybrid_bread.webp";
 import { Link } from "react-router-dom";
 const Hybridsolarsystembreadcrum = () => {
   return (

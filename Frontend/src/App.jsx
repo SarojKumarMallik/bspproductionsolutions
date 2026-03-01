@@ -18,6 +18,7 @@ import Career from "./Pages/Career/Career";
 import Solaramc from "./Pages/Solaramc/Solaramc";
 import Projects from "./Pages/Projects/Projects";
 import Commercialindustrial from "./Pages/Commercialindustrial/Commercialindustrial";
+import Blog from "./Pages/Blog/Blog";
 
 function App() {
   const location = useLocation(); // 👈 detect route change
@@ -62,6 +63,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Service />} />
+        <Route path="/blogs" element={<Blog />} />
         <Route
           path="/services/on-grid-solar-system"
           element={<Ongridsolarsystem />}

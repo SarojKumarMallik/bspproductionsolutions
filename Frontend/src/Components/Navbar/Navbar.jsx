@@ -228,7 +228,7 @@ const Navbar = () => {
             </div>
 
             <NavLink
-              to="/blog"
+              to="/blogs"
               className={({ isActive }) =>
                 `nav-item ${isActive ? "active" : ""}`
               }
@@ -357,7 +357,7 @@ const Navbar = () => {
           </div>
 
           <NavLink
-            to="/blog"
+            to="/blogs"
             className="mobile-nav-item"
             onClick={closeMobileMenu}
           >
