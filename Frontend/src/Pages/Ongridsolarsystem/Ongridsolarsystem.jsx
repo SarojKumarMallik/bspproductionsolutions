@@ -6,7 +6,7 @@ import Ongridsolarsavings from "../../Components/Ongridsolarsavings/Ongridsolars
 import Ourserviceswhy from "../../Components/Ourserviceswhy/Ourserviceswhy";
 import Howtoinstall from "../../Components/Howtoinstall/Howtoinstall";
 import Ongridfaq from "../../Components/Ongridfaq/Ongridfaq";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const Ongridsolarsystem = () => {
   return (
