@@ -61,9 +61,7 @@ const Solaramchero = () => {
             <a href="/contact" className="solaramc-btn primary">
               Get AMC Quote <FaArrowRight />
             </a>
-            <a href="/services" className="solaramc-btn secondary">
-              View Services
-            </a>
+            
           </div>
 
         </div>

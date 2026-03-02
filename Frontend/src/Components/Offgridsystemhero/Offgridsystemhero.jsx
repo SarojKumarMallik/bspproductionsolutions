@@ -40,9 +40,7 @@ const Offgridsystemhero = () => {
             <Link to="/contact" className="bsp-primary-btn">
               Get Consultation
             </Link>
-            <Link to="/services" className="bsp-outline-btn">
-              Explore Services
-            </Link>
+            
           </div>
         </div>
 

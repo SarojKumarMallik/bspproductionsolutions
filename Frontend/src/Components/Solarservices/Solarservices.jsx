@@ -1,34 +1,38 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {
-  FiHome,
-  FiBriefcase,
   FiZap,
-  FiSun,
-  FiArrowUpRight
+  FiBatteryCharging,
+  FiPower,
+  FiTool,
+  FiArrowRight
 } from "react-icons/fi";
 import "./Solarservices.css";
 
 const services = [
   {
-    icon: <FiHome />,
-    title: "Residential Rooftop",
-    desc: "Cut electricity bills with high-efficiency home solar installations."
-  },
-  {
-    icon: <FiBriefcase />,
-    title: "Commercial Solar",
-    desc: "Scalable solar solutions designed for offices and enterprises."
-  },
-  {
     icon: <FiZap />,
-    title: "On-Grid Systems",
-    desc: "Feed excess power back to the grid and earn energy credits."
+    title: "On Grid Solar System",
+    desc: "A grid-connected solar solution that allows you to generate electricity and feed excess power back to the utility grid, reducing electricity bills and maximizing savings.",
+    link: "/services/on-grid-solar-system"
   },
   {
-    icon: <FiSun />,
-    title: "Off-Grid Systems",
-    desc: "Battery-backed power systems for remote and rural locations."
+    icon: <FiBatteryCharging />,
+    title: "Hybrid Solar System",
+    desc: "An advanced solar setup with battery backup that stores excess energy for later use, ensuring uninterrupted power supply during outages.",
+    link: "/services/hybrid-solar-system"
+  },
+  {
+    icon: <FiPower />,
+    title: "Off Grid Solar System",
+    desc: "A completely independent solar power solution designed for remote areas without grid access, powered by battery storage systems.",
+    link: "/services/off-grid-solar-system"
+  },
+  {
+    icon: <FiTool />,
+    title: "Solar AMC",
+    desc: "Comprehensive Annual Maintenance Contract services to ensure peak performance, system safety, and long-term efficiency of your solar installation.",
+    link: "/services/solar-amc"
   }
 ];
 
@@ -36,39 +40,39 @@ const Solarservices = () => {
   return (
     <section className="Solarservices">
       <div className="Solarservices_container">
-        {/* ===== HEADER ===== */}
-        <div className="Solarservices_header">
-          <div className="Solarservices_heading">
-            <span className="Solarservices_tag">OUR EXPERTISE</span>
-            <h2 className="Solarservices_title">
-              Comprehensive <span>Solar Services</span>
-            </h2>
-            <p className="Solarservices_desc">
-              Tailored energy solutions for every need — from residential rooftops
-              to utility-scale commercial solar plants.
-            </p>
-          </div>
 
-          <Link to="/services" className="Solarservices_cta">
-            View All Services <FiArrowUpRight />
-          </Link>
+        <div className="Solarservices_header">
+          <span className="Solarservices_tag">OUR SOLAR SOLUTIONS</span>
+          <h2 className="Solarservices_title">
+            Reliable & Smart <span>Solar Services</span>
+          </h2>
+          <p className="Solarservices_subtitle">
+            We deliver high-performance solar solutions tailored for residential,
+            commercial, and industrial energy needs across Odisha.
+          </p>
         </div>
 
-        {/* ===== CARDS ===== */}
         <div className="Solarservices_grid">
           {services.map((item, index) => (
             <div className="Solarservices_card" key={index}>
+
               <div className="Solarservices_iconWrap">
-                <div className="Solarservices_icon">{item.icon}</div>
+                <div className="Solarservices_icon">
+                  {item.icon}
+                </div>
               </div>
 
               <h4 className="Solarservices_cardTitle">{item.title}</h4>
               <p className="Solarservices_cardDesc">{item.desc}</p>
 
-              <span className="Solarservices_cardLine" />
+              <Link to={item.link} className="Solarservices_btn">
+                Read More <FiArrowRight />
+              </Link>
+
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
