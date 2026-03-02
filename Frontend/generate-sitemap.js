@@ -8,11 +8,17 @@ const writeStream = createWriteStream("./public/sitemap.xml");
 
 sitemap.pipe(writeStream);
 
-// ✅ Only 2 URLs
-sitemap.write({ url: "/", changefreq: "daily", priority: 1.0 });
+sitemap.write({
+  url: "/",
+  lastmod: new Date().toISOString(),
+  changefreq: "weekly",
+  priority: 1.0,
+});
+
 sitemap.write({
   url: "/services/on-grid-solar-system",
-  changefreq: "weekly",
+  lastmod: new Date().toISOString(),
+  changefreq: "monthly",
   priority: 0.9,
 });
 
