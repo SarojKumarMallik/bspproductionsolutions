@@ -12,7 +12,7 @@ import RenergyInnovation from "../../Components/RenergyInnovation/RenergyInnovat
 import Pmsuryaghar from "../../Components/Pmsuryaghar/Pmsuryaghar";
 import Brands from "../../Components/Brands/Brands";
 import Solarservices from "../../Components/Solarservices/Solarservices";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   return (
