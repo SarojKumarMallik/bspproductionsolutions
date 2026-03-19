@@ -47,7 +47,7 @@ const Ongridherosection = () => {
               Get Free Consultation
             </a>
 
-            <a href="tel:+919775353642" className="secondary-btn">
+            <a href="tel:+91" className="secondary-btn">
               Call Now
             </a>
           </div>

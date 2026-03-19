@@ -66,10 +66,16 @@ const Navbar = () => {
       <div className="Navbar-topbar">
         <div className="Navbar-topbar-container">
           <div className="Navbar-top-left">
-            <div className="Navbar-contact-item">
-              <FaPhoneAlt className="Navbar-contact-icon" />
-              <span>+91 9775353642</span>
-            </div>
+           <div className="Navbar-contact-item">
+  <FaPhoneAlt className="Navbar-contact-icon" />
+  
+  <a 
+    href="tel:+918018970154" 
+    className="Navbar-contact-link"
+  >
+    +91 8018970154
+  </a>
+</div>
             <div className="Navbar-contact-item">
               <FaEnvelope className="Navbar-contact-icon" />
               <span>bspprojectsolutions@gmail.com</span>
